@@ -63,62 +63,6 @@ public class Arvore{
 
     }// fim método inserir
 
-    // private void inserir(No noAtual, int elemento){
-    //     //verificar se no esta cheio
-    //         //se sim, comparar os ponteiros para saber a localização do ponteiro onde deve ser inserido o elemento
-    //             // se o ponteiro existir, passar o ponteiro e o elemento como parametro para esta mesma função
-    //             // se não, criar o ponteiro e adicionar o elemento;
-    //         //se não, inserir no No atual;
-    //
-    //
-    //     // inserir no No atual se houver posições vazias
-    //     if(!noAtual.isFull()){
-    //         noAtual.setarConteudo(elemento);
-    //
-    //     } // isFull -> deverá verificar os ponteiros
-    //     else{
-    //         // for para percorrer o conteudo
-    //         for(int i = 0; i < this.size - 1; i++){
-    //
-    //             if(elemento < noAtual.getConteudo(i)){
-    //                 // verificar se existe o ponteiro nessa posição
-    //                 if(noAtual.getNo(i) != null){
-    //                     inserir(noAtual.getNo(i), elemento);
-    //
-    //                     return; // para sair do FOR
-    //                 }
-    //                 else{
-    //                     // cria um novo Ponteiro, seta o conteudo, e mandar o indice do ponteiro junto com o novo ponteiro que irá substituir o null
-    //                     No novo = new No();
-    //                     novo.setarConteudo(elemento);
-    //                     noAtual.setNo(i, novo);
-    //
-    //                     return; // para sair do FOR
-    //                 }
-    //
-    //             }else if((i+1) == this.size - 1){ // ultimo caso do FOR
-    //                 if(elemento >= noAtual.getConteudo(i)){ // se o elemento for maior que o ultimo elemento do vetor de conteudos
-    //                     if(noAtual.getNo(i+1) != null){
-    //                         inserir(noAtual.getNo(i+1), elemento);
-    //
-    //                         return; // para sair do FOR
-    //                     }
-    //                     else{
-    //                         // cria um novo Ponteiro, seta o conteudo, e mandar o indice do ponteiro junto com o novo ponteiro que irá substituir o null
-    //                         No novo = new No();
-    //                         novo.setarConteudo(elemento);
-    //                         noAtual.setNo(i+1, novo);
-    //
-    //                         return; // para sair do FOR
-    //                     }
-    //                 }
-    //
-    //             }
-    //         }// fim FOR
-    //
-    //     }// fim if externo
-    //
-    // }// fim método inserir
     private No busca(No noAtual, int elemento){
         //Percorre a arvore e ao achar aonde pode ser adicionado ou o elemento procurando, retorna o No referente;
 
