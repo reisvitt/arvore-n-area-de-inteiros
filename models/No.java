@@ -71,6 +71,11 @@ public class No{
         return (Integer) this.conteudos[indice].getConteudo();
     }
 
+    // método criado ESTRITAMENTE PARA REMOÇÃO
+    public void setConteudo(int indice){
+        this.conteudos[indice] = null;
+    }
+
     public No getNo(int indice){
         return this.ponteiros[indice];
     }
